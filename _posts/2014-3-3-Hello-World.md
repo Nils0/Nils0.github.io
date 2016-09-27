@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My first week at Metis in San Francisco
+title: My first week at Metis
 ---
 
 Data Science enables businesses to make better decisions faster – that's why I was very excited to start into the 3-months, full-time immersive Data Science Bootcamp at Metis in San Francisco last week. 
