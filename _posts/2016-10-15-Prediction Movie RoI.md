@@ -38,7 +38,7 @@ Given the low correlations, it was not surprising that all my Linear Regression 
 
 Therefore, I decided to instead try a Random Forest model - again using sklearn. This time I good an R-squared of 0.26, which was still not great but at least something and way better than the Linear regression model.
 
-[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Models.png
+![logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Models.png
 
 # 4. Deep dives on selected Genres
 
