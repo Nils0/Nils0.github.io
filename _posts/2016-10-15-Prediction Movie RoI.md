@@ -9,9 +9,7 @@ The learning curve continues to be steep in the Data Science Bootcamp at Metis -
   
 After looking at several web pages on movies including http://www.boxofficemojo.com and http://www.imdb.com, I wondered whether I would be able to **predict the Return on Investment (ROI) of movies using information that are available before the movie is produced.** In case of success this model could be used to advice movie studios what to spend their money on, which could be very useful as the RoI largely varies between movies from -1 to 84 (see histogram below).
 
-[My helpful screenshot]({{ https://github.com/Nils0/Nils0.github.io }}/images/Luther/MovieRoIs.png)
-
-[image-title-here](/images/Luther/MovieRoIs.png){:class="img-responsive"}
+[Histogram of Movie RoI](/images/Luther/MovieRoIs.png){:class="img-responsive"}
 
 # 2. Feature selection and web scraping
   
@@ -30,7 +28,7 @@ Hence, I started looking for features that I could use in my machine learning al
 
 I scraped data on 10,000 movies from various sources and ended up with 2400 that had all the data points available that I needed.
 
-[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Luther_overview.png
+[logo]: (/images/Luther/MovieRoIs.png)
 
 # 3. Machine Learning models on the data set
 
