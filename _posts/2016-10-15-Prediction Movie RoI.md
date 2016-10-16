@@ -9,7 +9,7 @@ The learning curve continues to be steep in the Data Science Bootcamp at Metis -
   
 After looking at several web pages on movies including http://www.boxofficemojo.com and http://www.imdb.com, I wondered whether I would be able to **predict the Return on Investment (ROI) of movies using information that are available before the movie is produced.** In case of success this model could be used to advice movie studios what to spend their money on, which could be very useful as the RoI largely varies between movies from -1 to 84 (see histogram below).
 
-[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/MovieRoIs.png
+![My helpful screenshot]({{ https://github.com/Nils0/Nils0.github.io }}/images/Luther/MovieRoIs.png
 
 # 2. Feature selection and web scraping
   
@@ -38,7 +38,7 @@ Given the low correlations, it was not surprising that all my Linear Regression 
 
 Therefore, I decided to instead try a Random Forest model - again using sklearn. This time I good an R-squared of 0.26, which was still not great but at least something and way better than the Linear regression model.
 
-![logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Models.png
+[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Models.png
 
 # 4. Deep dives on selected Genres
 
