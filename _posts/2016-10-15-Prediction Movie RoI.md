@@ -28,7 +28,7 @@ Hence, I started looking for features that I could use in my machine learning al
 
 I scraped data on 10,000 movies from various sources and ended up with 2400 that had all the data points available that I needed.
 
-[logo](/images/Luther/MovieRoIs.png)
+[Histogram of Movie RoI](/images/Luther/MovieRoIs.png){:class="img"}
 
 # 3. Machine Learning models on the data set
 
