@@ -3,9 +3,9 @@ layout: post
 title: Predicting The Return On Investment Of Movies
 ---
 
-# 1. Goal of the second project
-
 The learning curve continues to be steep in the Data Science Bootcamp at Metis - over the last two weeks we particularly learned how to implement supervised machine learning algorithms and how to scrape the web. These new skills were crucial for our second project on movie data - we were asked to come up with a project that uses arbitrary web sources on movie data machine learning techniques.  
+
+# 1. Goal of the second project
   
 After looking at several web pages on movies including http://www.boxofficemojo.com and http://www.imdb.com, I wondered whether I would be able to **predict the Return on Investment (ROI) of movies using information that are available before the movie is produced.** In case of success this model could be used to advice movie studios what to spend their money on, which could be very useful as the RoI largely varies between movies from -1 to 84 (see histogram below).
 
@@ -28,7 +28,7 @@ Hence, I started looking for features that I could use in my machine learning al
 
 I scraped data on 10,000 movies from various sources and ended up with 2400 that had all the data points available that I needed.
 
-[Histogram of Movie RoI](/images/Luther/MovieRoIs.png){:class="img"}
+[Overview of target and features](/images/Luther/Luther_overview.png){:class="img-responsive"}
 
 # 3. Machine Learning models on the data set
 
@@ -38,13 +38,13 @@ Given the low correlations, it was not surprising that all my Linear Regression 
 
 Therefore, I decided to instead try a Random Forest model - again using sklearn. This time I good an R-squared of 0.26, which was still not great but at least something and way better than the Linear regression model.
 
-[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Models.png
+[Model overview](/images/Luther/Models.png){:class="img-responsive"}
 
 # 4. Deep dives on selected Genres
 
 In order to further increase the accuracy of the model I decided to look at subsets of the data only. I particularly focused on selected genres only - For Sci-Fi/Fantasy and Animation movies, this worked surprisingly well resulting in R-squared values of 0.65/ 0.39 on the test set.
 
-[logo]: /Users/Nils/ds/metis/Blog/Nils0.github.io/images/Luther/Genres.png
+[Genre Deep Dives](images/Luther/Genres.png){:class="img-responsive"}}
 
 # 6. Further comments and additional references
 
