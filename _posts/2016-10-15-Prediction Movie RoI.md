@@ -11,6 +11,8 @@ After looking at several web pages on movies including http://www.boxofficemojo.
 
 [My helpful screenshot]({{ https://github.com/Nils0/Nils0.github.io }}/images/Luther/MovieRoIs.png)
 
+[image-title-here](/images/Luther/MovieRoIs.png){:class="img-responsive"}
+
 # 2. Feature selection and web scraping
   
 Hence, I started looking for features that I could use in my machine learning algorithm predicting the ROI and came up with the following potential candidates:
