@@ -41,7 +41,7 @@ model.add(Dropout(0.5))
 model.add(Dense(4, init='normal'))  
 model.load_weights('help_files/bottleneck_fc_model.h5')  
 model.compile(optimizer='adam', loss='mean_squared_error')
-```
+``
 
 For more details, lecture 8 from this [Stanford class](https://archive.org/details/cs231n-CNNs) is a good resource.
 
