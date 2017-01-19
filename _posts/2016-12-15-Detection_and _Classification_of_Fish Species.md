@@ -34,14 +34,13 @@ The last classification step uses the deep neural network (VGG-16) with weights 
 
 The second step is very similar to the last only that it replaces the Classification Head with a regression Head using the following code: 
 
-model = Sequential()
-model.add(Flatten(input_shape=[512,2,5]))
-model.add(Dense(256, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(4, init='normal'))
-
-model.load_weights('help_files/bottleneck_fc_model.h5')
-model.compile(optimizer='adam', loss='mean_squared_error')
+model = Sequential()  
+model.add(Flatten(input_shape=[512,2,5]))  
+model.add(Dense(256, activation='relu'))  
+model.add(Dropout(0.5))  
+model.add(Dense(4, init='normal'))  
+model.load_weights('help_files/bottleneck_fc_model.h5')  
+model.compile(optimizer='adam', loss='mean_squared_error')  
 
 For more details, lecture 8 from this Stanford class is a good resource: https://archive.org/details/cs231n-CNNs.
 
