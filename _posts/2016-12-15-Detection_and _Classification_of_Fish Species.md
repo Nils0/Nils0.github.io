@@ -28,8 +28,6 @@ In short my approach works as follows:
 * Crop a rectangle containing the fish out of the image
 * Use another pre-trained VGG-16 model with classification head in Keras to classify the fish using the cropped image
 
-[The Approach](/images/Final/Process.png){:class="img-responsive"}
-
 The first step is easy to accomplish using some basic functions (mainly resize) from OpenCV.
 
 The last classification step uses the deep neural network (VGG-16) with weights trained on ImageNet. This network has performed very well on classifying images. For a detailed description see this Blog: https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html. The basic idea is to download the weights for the convolutional and RELU steps from a pretrained model. Then use a training set of images from Kaggle to train the Dense layers (Classification Head).
@@ -48,6 +46,10 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 For more details, lecture 8 from this Stanford class is a good resource: https://archive.org/details/cs231n-CNNs.
 
 The third step is once again an easy python exercise using OpenCV.
+
+For a graphical overview of the approach please see below.
+
+[The Approach](/images/Final/Process.png){:class="img-responsive"}
 
 # 3. Results
 
