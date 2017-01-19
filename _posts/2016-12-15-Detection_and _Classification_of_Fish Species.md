@@ -42,7 +42,7 @@ model.add(Dense(4, init='normal'))
 model.load_weights('help_files/bottleneck_fc_model.h5')  
 model.compile(optimizer='adam', loss='mean_squared_error')  
 
-For more details, lecture 8 from this Stanford class is a good resource: https://archive.org/details/cs231n-CNNs.
+For more details, lecture 8 from this [Stanford class](https://archive.org/details/cs231n-CNNs) is a good resource.
 
 The third step is once again an easy python exercise using OpenCV. For a graphical overview of the approach please see below.
 
