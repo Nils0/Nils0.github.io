@@ -15,11 +15,11 @@ Nobody will be happy at a job, where the company culture does not fit the indivi
   
 As a first step, I had to get those reviews from one of the homepages collecting them. Unfortunately I couldn't find a good API and therefore decided to use brute force web scraping, which worked quite well. Afterwards I used simple regular expressions (mostly sequences like a noun following an adjective) to find initial candidates that might describe the culture of a company. For technical reasons I tokenized these expressions into n-grams.
 
-# 3. Word2Vec
+# 3. Transformation of words to vectors
 
 As described above the first step in NLP is usually to transform words into vectors. These vectors are n-dimensional, where n is the number of different words in the document(s) you are looking at. In each vector, all entries are zero except the one referring to the respective word. When looking at multiple documents (in this case the 50k reviews) this can easily be translated into a term-document matrix where the rows represent different documents and the columns the different terms/ phrases. The entries in the matrix indicate the number of occurrences of the respective term in the respective document.
 
-# 4. Semantic extraction of key phrases using LSI
+# 4. Semantic extraction of cultural phrases
 
 The approach for semantic key phrase extraction I decided to use works as follows:
 
@@ -32,7 +32,7 @@ The tricky part here is to create the reduced term space. I decided to use Laten
 
 As a result of this step, I got a list of expressions on corporate culture for each company. However, a lot of these expressions where similar across companies and therefore failed to describe the specifics of a company that I was looking for.
 
-# 5. Company specific key phrases using TFIDF
+# 5. Extraction of company specific phrases
 
 In order to filter out the specific key phrases for each company, I used TFIDF on the identified culture phrases from step 4. I.e. I highlighted those phrases that appeared often in the reviews of the specific company and relatively rarely across the others. This gave me those culture expressions specific to each company.
 
