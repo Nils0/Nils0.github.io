@@ -13,11 +13,11 @@ Shortly before the start of this project, there was a new competition posted on 
 
 As my main goal for this project was to get to know the techniques of convolutional neural networks I decided to give it a shot. Please see below for a couple of those pictures from fishing vessels to give you an idea of the task.
 
-[Example 1: Albacore](/images/Final/ALB.jpg){:class="img-responsive"}
-[Example 2: Big eye tuna](/images/Final/BET.jpg){:class="img-responsive"}
-[Example 3: No fish](/images/Final/NoF.jpg){:class="img-responsive"}
-[Example 4: Other](/images/Final/Other.jpg){:class="img-responsive"}
-[Example 5: Shark](/images/Final/shark.jpg){:class="img-responsive"}
+[Example 1: Albacore](/images/Final/ALB.jpg){:class="img-responsive"}  
+[Example 2: Big eye tuna](/images/Final/BET.jpg){:class="img-responsive"}  
+[Example 3: No fish](/images/Final/NoF.jpg){:class="img-responsive"}  
+[Example 4: Other](/images/Final/Other.jpg){:class="img-responsive"}  
+[Example 5: Shark](/images/Final/shark.jpg){:class="img-responsive"}  
 
 # 2. Approach: Two step convolutional neural network
   
