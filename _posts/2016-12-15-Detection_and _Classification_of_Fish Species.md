@@ -3,13 +3,13 @@ layout: post
 title: Detection and Classification of Fish Species
 ---
 
-Image processing using convolutional neural networks (or deep learning) was one of the key topics over the last couple of weeks in my Data Science bootcamp at Metis in San Francisco. One of the key use cases for image processing is the classification of images, which has a broad range of applications. Examples include simple binary categorization tasks like deciding whether a given picture shows a cat or a dog and more advanced techniques used to steer autonomous cars.
+Image processing using convolutional neural networks (or deep learning) was one of the key topics over the last couple of weeks in my Data Science boot camp at Metis in San Francisco. One of the key use cases for image processing is the classification of images, which has a broad range of applications. Examples include simple binary categorization tasks like deciding whether a given picture shows a cat or a dog and more advanced techniques used to steer autonomous cars.
 
 I was fascinated how these neural networks are able to classify images and therefore decided to play around with it for my last and final project at Metis.
 
 # 1. Goal of the Project
   
-Shortly before the start of this project, there was a new competition posted on Kaggle which aims to detect and classify fish into 8 categories based on images taken on fishing vessels (see https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring). The competition is sponsored by the Nature Conservancy in an effort to fight overfishing through efficient monitoring of fishing activities.
+Shortly before the start of this project, there was a new [competition](https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring) posted on Kaggle which aims to detect and classify fish into 8 categories based on images taken on fishing vessels. The competition is sponsored by the Nature Conservancy in an effort to fight overfishing through efficient monitoring of fishing activities.
 
 As my main goal for this project was to get to know the techniques of convolutional neural networks, I decided to give it a shot. Please see below for a couple of those pictures from fishing vessels to get an idea of the task.
 
@@ -30,7 +30,7 @@ In short my approach works as follows:
 
 The first step is easy to accomplish using some basic functions (mainly resize) from OpenCV.
 
-The last classification step uses the deep neural network "VGG-16" with weights trained on ImageNet. This network has performed very well on classifying images. For a detailed description see this Blog: https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html. The basic idea is to download the weights for the convolutional and RELU layers from a pretrained model. Then use a training set of images from Kaggle to train the dense layers (Classification Head).
+The last classification step uses the deep neural network "VGG-16" with weights trained on ImageNet. This network has performed very well on classifying images. For a detailed description see this [Blog](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html). The basic idea is to download the weights for the convolutional and RELU layers from a pretrained model. Then use a training set of images from Kaggle to train the dense layers (Classification Head).
 
 The second step is very similar to the last one only that it replaces the classification head with a regression Head using the following code: 
 
