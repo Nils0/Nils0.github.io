@@ -3,7 +3,7 @@ layout: post
 title: Detection and Classification of Fish Species
 ---
 
-Image processing using convolutional neural networks (or deep learning) was one of the key topics over the last couple of weeks in my Data Science boot camp at Metis in San Francisco. One of the key use cases for image processing is the classification of images, which has a broad range of applications. Examples include simple binary categorization tasks like deciding whether a given picture shows a cat or a dog and more advanced techniques used to steer autonomous cars.
+Image processing using convolutional neural networks (or deep learning) was one of the key topics over the last couple of weeks in my Data Science boot camp at Metis in San Francisco. One of the major use cases for image processing is the classification of images, which has a broad range of applications. Examples include simple binary categorization tasks like deciding whether a given picture shows a cat or a dog and more advanced techniques helping to steer autonomous cars.
 
 I was fascinated how these neural networks are able to classify images and therefore decided to play around with it for my last and final project at Metis.
 
@@ -11,7 +11,7 @@ I was fascinated how these neural networks are able to classify images and there
   
 Shortly before the start of this project, there was a new [competition](https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring) posted on Kaggle which aims to detect and classify fish into 8 categories based on images taken on fishing vessels. The competition is sponsored by the Nature Conservancy in an effort to fight overfishing through efficient monitoring of fishing activities.
 
-As my main goal for this project was to get to know the techniques of convolutional neural networks, I decided to give it a shot. Please see below for a couple of those pictures from fishing vessels to get an idea of the task.
+As my main goal for this project was to get to know the techniques of convolutional neural networks, I decided to give it a shot. Please see below for a couple of those fishing vessel pictures to get an idea of the task.
 
 [Example 1: Albacore](/images/Final/ALB.jpg){:class="img-responsive"}  
 [Example 2: Big eye tuna](/images/Final/BET.jpg){:class="img-responsive"}  

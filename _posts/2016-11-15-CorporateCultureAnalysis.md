@@ -3,9 +3,9 @@ layout: post
 title: Corporate Culture Analysis
 ---
 
-After finishing up our learning on categorical machine learning (clustering and classification), the last couple of weeks focused on Natural Language Processing (NLP). NLP is at the intersection of Artificial Intelligence, Computer Science and Linguistics and has the goal to teach computers to process, understand and even generate human language. Common use cases include text classification (e.g. sentiment analysis), semantic analysis (e.g. extracting document meaning) and machine translation. The usual approach for NLP is to first transform words into vectors (word2vec) to then be able to perform any kind of Machine Learning on these "word vectors".
+After finishing our learning on categorical machine learning (clustering and classification), the last couple of weeks focused on Natural Language Processing (NLP). NLP is at the intersection of Artificial Intelligence, Computer Science and Linguistics and has the goal to teach computers to process, understand and even generate human language. Common use cases include text classification (e.g. sentiment analysis), semantic analysis (e.g. extracting document meaning) and machine translation. The usual approach for NLP is to first transform words into vectors (word2vec) to then be able to perform any kind of Machine Learning on these "word vectors".
 
-To apply our new skills we were asked to come up with a project that uses text data of our choice and uses some of the NLP techniques we had covered.
+To apply our new skills we were asked to come up with a project that uses text data of our choice and uses some of the NLP techniques we had covered in the lectures.
 
 # 1. Goal of the second project
   
@@ -17,7 +17,7 @@ As a first step, I had to get those reviews from one of the homepages collecting
 
 # 3. Transformation of words to vectors
 
-As described above the first step in NLP is usually to transform words into vectors. These vectors are n-dimensional, where n is the number of different words in the document(s) you are looking at. In each vector, all entries are zero except the one referring to the respective word. When looking at multiple documents (in this case the 50k reviews) this can easily be translated into a term-document matrix where the rows represent different documents and the columns the different terms/ phrases. The entries in the matrix indicate the number of occurrences of the respective term in the respective document.
+As described above the first step in NLP is usually to transform words and documents into vectors. These vectors are n-dimensional, where n is the number of unique words in the documents. Each document is represented by one vector and each of the n positions in the vector represent one unique word. The entries in the vector then indicate how many times the respective word occurs in the respective document. When looking at multiple documents (in this case the 50k reviews) this can easily be translated into a term-document matrix where the rows represent different documents and the columns the different terms/ phrases. The entries in the matrix indicate the number of occurrences of the respective term in the respective document.
 
 # 4. Semantic extraction of cultural phrases
 
@@ -28,7 +28,7 @@ The approach for semantic key phrase extraction I decided to use works as follow
 * Transform the candidate key phrases from 2. into the reduced term space
 * Semantically compare the candidate key phrases to the arbitrary paragraph on corporate culture using cosine similarity to extract the key phrases that describe the culture
 
-The tricky part here is to create the reduced term space. I decided to use Latent Semantic Indexing (LSI) which performs a Singular Value Decomposition (SVD) of the document-term matrix with TFIDF (term frequency-inverse document frequency) Weightings.
+The tricky part here is to create the reduced term space. I decided to use Latent Semantic Indexing (LSI) which performs a Singular Value Decomposition (SVD) of the document-term matrix with TFIDF (term frequency-inverse document frequency) weightings.
 
 As a result of this step, I got a list of expressions on corporate culture for each company. However, a lot of these expressions where similar across companies and therefore failed to describe the specifics of a company that I was looking for.
 
