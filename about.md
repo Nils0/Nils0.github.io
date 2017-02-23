@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a Data Science Fellow at Metis in San Francisco enjoying a 12-week full-time Data Science bootcamp. Moreover, I work at a leading Management Consulting company and keen to deliver data-driven, high-impact results.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[nils.o.hansen@gmail.com](mailto:nils.o.hansen@gmail.com)
